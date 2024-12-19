@@ -1,0 +1,6 @@
+train: F:/Kevin_Study/大三上/智能制造技术/YOLOV11_homework/ultralytics-main1217/ultralytics-main/dataset/images/train
+val: F:/Kevin_Study/大三上/智能制造技术/YOLOV11_homework/ultralytics-main1217/ultralytics-main/dataset/images/val
+test: F:/Kevin_Study/大三上/智能制造技术/YOLOV11_homework/ultralytics-main1217/ultralytics-main/dataset/images/test
+
+nc: 1
+names: ['ta']
