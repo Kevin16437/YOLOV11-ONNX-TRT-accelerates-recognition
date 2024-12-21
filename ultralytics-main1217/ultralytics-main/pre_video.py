@@ -4,7 +4,7 @@ import numpy as np
 
 def predict_from_camera(model_path):
     # 加载训练好的模型
-    model = YOLO(model_path)
+    model = YOLO('best.pt')
     
     # 打开摄像头 (0为默认摄像头，其他值为外接摄像头)
     cap = cv2.VideoCapture(0)
@@ -80,7 +80,8 @@ def predict_from_camera(model_path):
 
 if __name__ == "__main__":
     # 设置模型路径
-    model_path = "F:/Kevin_Study/大三上/智能制造技术/YOLOV11_homework/ultralytics-main1217/ultralytics-main/runs/detect/train5/weights/best.pt"  # 替换为你的模型路径
+    # model = YOLO('yolov8n.pt') 
+    # model_path = "F:/Kevin_Study/大三上/智能制造技术/YOLOV11_homework/ultralytics-main1217/ultralytics-main/runs/detect/train5/weights/best.pt"  # 替换为你的模型路径
     
     # 执行实时预测
-    predict_from_camera(model_path)
+    predict_from_camera('best.pt')
